@@ -4,8 +4,8 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.string :starter
       t.string :main
       t.string :beverage
-      t.reference :user
-      t.reference :restaurant
+      t.references :user
+      t.references :restaurant
 
       t.timestamps
     end

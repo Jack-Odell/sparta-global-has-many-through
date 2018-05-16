@@ -27,13 +27,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :user %>
-    <%= form.text_field :user %>
+    <%= form.label :user_id %>
+    <%= collection_select(:order, :user_id, User.all, :id, :name) %>
   </div>
 
   <div class="field">
-    <%= form.label :restaurant %>
-    <%= form.text_field :restaurant %>
+    <%= form.label :restaurant_id %>
+    <%= collection_select(:order, :restaurant_id, Restaurant.all, :id, :name) %>
   </div>
 
   <div class="actions">
