@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Starter:</strong>
+  <%= @order.starter %>
+</p>
+
+<p>
+  <strong>Main:</strong>
+  <%= @order.main %>
+</p>
+
+<p>
+  <strong>Beverage:</strong>
+  <%= @order.beverage %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @order.user.name %>
+</p>
+
+<p>
+  <strong>Restaurant:</strong>
+  <%= @order.restaurant.name %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
